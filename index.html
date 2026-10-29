@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our FEU Tamaraw Journey</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2 class="logo">✦ OUR FEU TAMARAW JOURNEY</h2>
+  <nav>
+    <button class="active" data-page="home">HOME</button>
+    <button data-page="events">EVENTS</button>
+    <button data-page="timeline">TIMELINE</button>
+    <button data-page="about">ABOUT</button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="page active">
+  <div class="window green hero">
+    <div class="hero-text">
+      <span class="tag">BSIT 1-2</span>
+      <p class="label">FEU TAMARAW QUEST · PLAYER 01 · HP ♥♥♥</p>
+      <h1>OUR COLLEGE<br>JOURNEY</h1>
+      <p>We live, laugh, and stay together.</p>
+      <p>Witness our journey as we begin as classmates and grow together through every experience.</p>
+      <button class="btn blink" onclick="showPage('events')">▶ START GAME</button>
+    </div>
+    <div class="imgbox"><img src="pictures/collage.jpg" alt="Our class group photo"></div>
+  </div>
+  <div class="mini">
+    <div class="member blue pad">
+      <img class="profile blue" src="pictures/jamming.PNG">
+      <h3>Jamilla Faye Urbano</h3>
+        <div class="social-links"></div>
+           <p>⤹ FrontEnd</p>
+           <p>⤹ Researcher</p>
+    </div>
+    <div class="member pink pad">
+      <img class="profile pink" src="pictures/me.jpg">
+      <h3>Julyana Tutanes</h3>
+        <div class="social-links"></div>
+           <p>⤹ BackEnd</p>
+           <p>⤹ Project Manager</p>
+  
+    </div>
+    <div class="member pad green">
+      <img class="profile green" src="pictures/gelatin.jpg">
+      <h3>Mhari Angelie Nanters</h3>
+           <p>⤹ FrontEnd</p>
+    </div>
+    <div class="member pad purple">
+      <img class="profile purple" src="pictures/happi.png">
+      <h3>Ellea Marie Acanto</h3>
+        <div class="social-links"></div>
+           <p>⤹ BackEnd</p>
+    </div>
+  </div>
+</section>
+
+<section id="menuPage" class="page">
+  
+</section>
+
+<section id="events" class="page">
+  <div class="top"><span class="label">EVENT LOG · MEMORY UNLOCKED</span><h2>Event Archive</h2></div>
+  <div class="gallery">
+    <article class="card"><img src="pictures/cuties.jpeg"><div class="cap"><span class="date">Sinag Tamaraw</span><p>An event that gave us all a core memory we won’t forget anytime soon. We learned so many things from being responsible, patient, and also teamwork.</p></div></article>
+    <article class="card"><img src="pictures/girlies.jpg"><div class="cap"><span class="date">Our First Duty</span><p> We went to watch for entertainment yet stayed for the memories. Cherishing our very first duty together.
+</p></div></article>
+    <article class="card"><img src="pictures/mejammhari.jpg"><div class="cap"><span class="date">Our First HangOut</span><p>This is when after we filmed for pathfit and deccided to hangout.</p></div></article>
+    <article class="card"><img src="pictures/theridleys.jpg"><div class="cap"><span class="date">Our Favorite Band</span><p>This is captured by us. This is our favorite band and we look forward to watch them together.</p></div></article>
+    <article class="card"><img src="pictures/concert.jpg"><div class="cap"><span class="date">Memorable Night</span><p>We had so much fun watching different bands.</p></div></article>
+    <article class="card"><img src="pictures/photoshoot.jpeg"><div class="cap"><span class="date">Our First Photoshoot</span><p>1, 2, 3 snap…First ever picture as a committee where we all point at each other asking which one should go first and ended up taking a picture together.</p></div></article>
+  </div>
+  <div>
+  <button class="nxtprv" id="prev" class="active" data-page="home" onclick="showPage('home')">Prev</button>
+  <button class="nxtprv" id="nxt" data-page="timeline" onclick="showPage('timeline')">Next</button> 
+  </div>
+</section>
+
+<section id="timeline" class="page">
+  <div class="top"><span class="label">LEVEL SELECT</span><h2>Our Journey</h2></div>
+  <div class="levels">
+    <div class="level"><span class="node">LV 01 🚩</span><div class="window purple"><span class="date">Chapter 01 · The Beginning</span><h3>Where It All Started</h3><p>wehadsomuchpotentioal</p><img src="pictures/firstevent.JPG" alt="Our first event"></div></div>
+    <div class="level"><span class="node">LV 02 ⭐</span><div class="window pink"><span class="date">Chapter 02 · Finding Our Rhythm</span><h3>joke lang</h3><p>#movedon</p><img src="pictures/girlies.jpg" alt="Friends together"></div></div>
+    <div class="level"><span class="node">LV 03 🚩</span><div class="window blue"><span class="date">Chapter 03 · Challenges and Growth</span><h3>title doajdodok</h3><p>#diworththerisk</p><img src="pictures/squishy.jpg" alt="Challenges together"></div></div>
+    <div class="level"><span class="node">LV 04 ⭐</span><div class="window green"><span class="date">Chapter 04 · Memories Made</span><h3>titlte</h3><p>sanaall memories made</p><img src="pictures/collage.jpg" alt="Collage of our memories"></div></div>
+    <div class="level"><span class="node">LV 05 🏁</span><div class="window yellow pink"><span class="date">Chapter 05 · Looking Ahead</span><h3>hahahaha</h3><p>ewan</p><img src="pictures/us.jpg" alt="The two of us"></div></div>
+  </div>
+  <div>
+  <button class="nxtprv" id="prev" data-page="events" onclick="showPage('events')">Prev</button>
+  <button class="nxtprv" id="nxt" data-page="about" onclick="showPage('about')">Next</button>
+  </div>
+</section>
+
+<section id="about" class="page">
+  <div class="top"><span class="label">About Page</span><h2>About Our Journey</h2></div>
+  <div class="about">
+    <div class="window pink"><img src="pictures/girlies.jpg" alt="Our party of classmates"></div>
+    <div class="window green pad">
+      <span class="label">OUR PARTY · past is past</span>
+      <h2>caotion</h2><p>ok bye.</p><p>iIDJOPks[KS[</p>
+      <div class="status">TEAM STATUS: STILL GROWING<br>OUR MISSION: LEARN, LAUGH, AND GROW TOGETHER</div>
+    </div>
+  </div>
+  <div>
+  <button class="nxtprv" id="prev" data-page="timeline" onclick="showPage('timeline')">Prev</button>
+  <button class="nxtprv" id="backhome" class="active" data-page="home" onclick="showPage('home')">Back HOME</button>
+  </div>
+</section>
+</main>
+
+<div class="ground" aria-hidden="true"></div>
+<dialog id="photo-viewer" aria-label="Full-size photo viewer">
+  <div class="photo-viewer-toolbar">
+    <span>PHOTO VIEW</span>
+    <button type="button" class="photo-viewer-close" aria-label="Close photo viewer">×</button>
+  </div>
+  <img alt="">
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
