@@ -38,3 +38,12 @@ photoViewer.addEventListener("click", event => {
   if (event.target === photoViewer) photoViewer.close();
 });
 photoViewer.addEventListener("close", () => viewerImage.removeAttribute("src"));
+
+function showMember(id) {
+  document.querySelectorAll(".member-panel").forEach(function (p) {
+    p.classList.toggle("active", p.id === id);
+  });
+  document.querySelectorAll(".mtab").forEach(function (b) {
+    b.classList.toggle("active", b.dataset.member === id);
+  });
+}
