@@ -6,10 +6,11 @@ html,body{height:100%; overflow:hidden}
 body{font-family:var(--body); font-size:22px; line-height:1.3; color:var(--text); background:var(--bg);
 background-image:linear-gradient(#ffffff0a 2px,transparent 2px),linear-gradient(90deg,#ffffff0a 2px,transparent 2px);
 background-size:16px 16px; display:flex; flex-direction:column}
-.nxtprv {border-width: 4px; border-style: solid; padding: 10px; border-color: #fff; color: #fff; background-color: var(--pink);}
+.nxtprv {position: relative; bottom: 0; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.55); margin: 0; width: 150px; border-width: 4px; border-style: solid; padding: 10px; border-color: #fff; color: #fff; background-color: var(--pink);}
 .nxtprv:hover {background-color: var(--purple);}
-#nxt {position: relative; left: 84.3%; top: 0; bottom: 0; right: 0;}
-#backhome {position: relative; left: 78%; top: 0; bottom: 0; right: 0;}
+#nxt {position: relative; left: 72%; top: 0; bottom: 0; right: 0; margin: 0;}
+#backhome {position: relative; left: 72%; top: 0; bottom: 0; right: 0; margin: 0;}
+#stickuy {position: sticky; bottom: 0;}
 button{font-family:var(--px); cursor:pointer}
 
 h1,h2,h3,.px{font-family:var(--px); font-weight:normal; line-height:1.6}
@@ -159,3 +160,41 @@ main img{cursor:zoom-in}
  .pr-top,.pr-grid{grid-template-columns:1fr}
  .stamp-wrap{width:min(100%,240px)}
 }
+
+.gallery .pixel-banner {
+  grid-column: 1 / -1;
+  justify-self: start;
+  position: relative;
+  display: block;
+  margin: 16px 4px 8px;
+  padding: 14px 28px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5c2749 !important;
+  background: #ff3470 !important;
+  border: 0;
+  /* inset = light top / dark bottom strips, outer = dark pixel outline */
+  box-shadow:
+    inset 0 4px 0 #ff6b9a,
+    inset 0 -4px 0 #f0144c,
+    0 -4px 0 0 #5c2749,
+    0 4px 0 0 #5c2749,
+    -4px 0 0 0 #5c2749,
+    4px 0 0 0 #5c2749;
+}
+
+/* white shine in the top-left corner */
+.gallery .pixel-banner::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+}
+
+.gallery .pixel-banner:first-child { margin-top: 0; }
