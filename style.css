@@ -176,7 +176,7 @@ main img{cursor:zoom-in}
   color: #5c2749 !important;
   background: #ff3470 !important;
   border: 0;
-  /* inset = light top / dark bottom strips, outer = dark pixel outline */
+  
   box-shadow:
     inset 0 4px 0 #ff6b9a,
     inset 0 -4px 0 #f0144c,
@@ -186,7 +186,6 @@ main img{cursor:zoom-in}
     4px 0 0 0 #5c2749;
 }
 
-/* white shine in the top-left corner */
 .gallery .pixel-banner::after {
   content: "";
   position: absolute;
